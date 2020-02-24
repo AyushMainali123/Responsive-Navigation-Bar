@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Trade+Winds&display=swap');
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    background-color: #ccc;
+    padding: 0;
+    margin: 0;
+}
+header
+{
+     padding: 0.5rem; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    color: #ddd;
+}
+header p
+{
+    
+    font-size: 1.3rem;
+    margin-left: 1rem;
+    font-family: 'Trade Winds', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+nav
+{
+    /* border: 2px solid #fff; */
+    flex: 1;
+}
+ul
+{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    /* border: 3px solid #fff; */
+}
+
+ul li a
+{
+
+    display: block;
+    color: honeydew;
+    text-decoration: none;
+    padding: 1rem;
+    font-weight: bolder;
+    /* border: 3px solid #fff; */
+}
+ul li a:hover
+{
+    color: orange;
+}
+.btn
+{
+    border: none;
+    border-radius: 30%;
+    cursor: pointer;
+    padding: 0.5rem;
+    font-weight: bolder;
+    display: block;
+    margin-right: 1rem;
+}
+.btn:hover
+{
+    background-color: orange;
+    color: honeydew;
+    opacity: 0.9;
+}
+@media (max-width: 500px)
+{
+    header
+    {
+        padding: 0.2rem;
+        flex-direction: column;
+    }
+    nav ul
+    {
+        flex-direction: column;
+    }
+    .btn
+    {
+        display: none;
+    }
+}
